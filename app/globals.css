@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0f;
+  font-family: 'JetBrains Mono', monospace;
+  color: #e0e0ff;
+}
+
+.glitch-text {
+  animation: glitch 3s infinite;
+}
+
+@keyframes glitch {
+  0%, 92%, 100% {
+    text-shadow: 2px 0 #f0f, -2px 0 #0ff;
+  }
+  93% {
+    text-shadow: -4px 0 #f0f, 4px 0 #0ff;
+    transform: skewX(-2deg);
+  }
+  95% {
+    text-shadow: 4px 0 #f0f, -2px 0 #0ff;
+    transform: skewX(2deg);
+  }
+  97% {
+    text-shadow: -2px 2px #f0f, 2px -2px #0ff;
+    transform: skewX(0);
+  }
+}
+
+.neon-pink {
+  color: #ff6b9d;
+  text-shadow: 0 0 10px #ff6b9d55, 0 0 30px #ff6b9d33;
+}
+
+.neon-blue {
+  color: #6bb3ff;
+  text-shadow: 0 0 10px #6bb3ff55, 0 0 30px #6bb3ff33;
+}
+
+.neon-green {
+  color: #6bffb3;
+  text-shadow: 0 0 10px #6bffb355, 0 0 30px #6bffb333;
+}
+
+.flicker-text {
+  animation: flicker 4s infinite;
+}
+
+@keyframes flicker {
+  0%, 95%, 100% { opacity: 1; }
+  96% { opacity: 0.6; }
+  98% { opacity: 0.8; }
+}
+
+.cursor-blink {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background: #3fb950;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.blink-text {
+  animation: blink 1.5s infinite;
+}
+
+.heart-particle {
+  position: fixed;
+  pointer-events: none;
+  animation: floatHeart 6s ease-in forwards;
+  z-index: 0;
+}
+
+@keyframes floatHeart {
+  0% { opacity: 0; transform: translateY(0) scale(0.5); }
+  10% { opacity: 0.4; }
+  80% { opacity: 0.2; }
+  100% { opacity: 0; transform: translateY(-600px) scale(1.2) rotate(20deg); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-scale {
+  animation: fadeScale 0.5s ease forwards;
+}
+
+@keyframes fadeScale {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
