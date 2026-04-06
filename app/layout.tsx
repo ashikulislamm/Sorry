@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://ashikulislamm.github.io/Sorry/", // Update with your actual domain
   },
   icons: {
-    icon: "/sorry.png",
-    shortcut: "/sorry.png",
-    apple: "/sorry.png",
+    icon: "/Sorry/sorry.png",
+    shortcut: "/Sorry/sorry.png",
+    apple: "/Sorry/sorry.png",
   },
   openGraph: {
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "I know what I did was wrong. I'm sorry for hurting you. You mean everything to me, and I want to make this right. Please read this.",
     images: [
       {
-        url: "/sorry.png",
+        url: "/Sorry/sorry.png",
         width: 1200,
         height: 1200,
         alt: "A real apology from someone who cares",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description:
       "I made a big mistake and I'm truly sorry. You matter so much to me. Will you forgive me?",
     creator: "@ReallyRegretful",
-    images: ["/sorry.png"],
+    images: ["/Sorry/sorry.png"],
   },
 };
 

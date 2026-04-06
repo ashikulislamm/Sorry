@@ -16,7 +16,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 // ── Customization ──────────────────────────────────────────────
 const HER_NAME = "Tania Khan"; // Change this to her name!
-const SONG_PATH = "/Sorry_Sorry.mp3"; // Put your audio file in /public and update this name if needed.
+const BASE_PATH = "/Sorry";
+const SONG_PATH = `${BASE_PATH}/Sorry_Sorry.mp3`; // Put your audio file in /public and update this name if needed.
 // ──────────────────────────────────────────────────────────────
 const CONSOLE_LOGS = [
     "$ initializing_fix.sh",
@@ -61,32 +62,32 @@ const EXCUSES = [
 ];
 const MEMORIES = [
     {
-        src: "/memories/memory-1.jpg",
+        src: `${BASE_PATH}/memories/memory-1.jpg`,
         title: "The Day We Laughed Too Much",
         note: "Bug count: 0 | Smile count: infinite"
     },
     {
-        src: "/memories/memory-2.jpg",
+        src: `${BASE_PATH}/memories/memory-2.jpg`,
         title: "Our Favorite Food Mission",
         note: "Calories high, drama low, vibes perfect"
     },
     {
-        src: "/memories/memory-3.jpg",
+        src: `${BASE_PATH}/memories/memory-3.jpg`,
         title: "That Random Cute Selfie",
         note: "Taken in 0.5x chaos mode"
     },
     {
-        src: "/memories/memory-4.jpg",
+        src: `${BASE_PATH}/memories/memory-4.jpg`,
         title: "Sunrise + Us + Peace",
         note: "Best deployed update so far"
     },
     {
-        src: "/memories/memory-5.jpg",
+        src: `${BASE_PATH}/memories/memory-5.jpg`,
         title: "Walk, Talk, Repeat",
         note: "Daily standup with extra romance"
     },
     {
-        src: "/memories/memory-6.jpg",
+        src: `${BASE_PATH}/memories/memory-6.jpg`,
         title: "Tiny Moment, Big Memory",
         note: "Saved in heart cache forever"
     }
@@ -114,7 +115,7 @@ function AppButton({ children, onClick, variant = "blue" }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 99,
+        lineNumber: 100,
         columnNumber: 5
     }, this);
 }
@@ -124,7 +125,7 @@ function VersionBadge({ text }) {
         children: text
     }, void 0, false, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 110,
+        lineNumber: 111,
         columnNumber: 5
     }, this);
 }
@@ -147,20 +148,20 @@ function ConsoleLog({ logs, visible }) {
                     children: line
                 }, i, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 120,
+                    lineNumber: 121,
                     columnNumber: 9
                 }, this)),
             visible && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "cursor-blink"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 130,
+                lineNumber: 131,
                 columnNumber: 19
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 118,
+        lineNumber: 119,
         columnNumber: 5
     }, this);
 }
@@ -186,7 +187,7 @@ function CheckItem({ text, delay }) {
                 children: "✓"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 143,
+                lineNumber: 144,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -194,13 +195,13 @@ function CheckItem({ text, delay }) {
                 children: text
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 146,
+                lineNumber: 147,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 137,
+        lineNumber: 138,
         columnNumber: 5
     }, this);
 }
@@ -241,7 +242,7 @@ function FloatingHearts() {
                 children: h.emoji
             }, h.id, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 189,
+                lineNumber: 190,
                 columnNumber: 9
             }, this))
     }, void 0, false);
@@ -329,7 +330,7 @@ function MuteButton() {
         children: paused ? "♪ Resume Music" : "♪ Pause Music"
     }, void 0, false, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 299,
+        lineNumber: 300,
         columnNumber: 5
     }, this);
 }
@@ -355,7 +356,7 @@ function Stage1({ onNext }) {
                 text: "SYSTEM ERROR v1.0.4"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 321,
+                lineNumber: 322,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -363,7 +364,7 @@ function Stage1({ onNext }) {
                 children: "ERROR 404"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 323,
+                lineNumber: 324,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -374,7 +375,7 @@ function Stage1({ onNext }) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 327,
+                lineNumber: 328,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -387,13 +388,13 @@ function Stage1({ onNext }) {
                         children: "boyfriend.bug"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 333,
+                        lineNumber: 334,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 331,
+                lineNumber: 332,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AppButton, {
@@ -402,13 +403,13 @@ function Stage1({ onNext }) {
                 children: "⚙ Fix Issue"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 336,
+                lineNumber: 337,
                 columnNumber: 7
             }, this)
         ]
     }, "stage1", true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 313,
+        lineNumber: 314,
         columnNumber: 5
     }, this);
 }
@@ -450,7 +451,7 @@ function Stage2({ onNext }) {
                         children: "// debug_report.log"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 360,
+                        lineNumber: 361,
                         columnNumber: 9
                     }, this),
                     [
@@ -478,7 +479,7 @@ function Stage2({ onNext }) {
                                     children: k
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 370,
+                                    lineNumber: 371,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -486,19 +487,19 @@ function Stage2({ onNext }) {
                                     children: v
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 371,
+                                    lineNumber: 372,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, k, true, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 369,
+                            lineNumber: 370,
                             columnNumber: 11
                         }, this))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 354,
+                lineNumber: 355,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -506,7 +507,7 @@ function Stage2({ onNext }) {
                 children: "// console output"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 377,
+                lineNumber: 378,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ConsoleLog, {
@@ -514,7 +515,7 @@ function Stage2({ onNext }) {
                 visible: true
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 380,
+                lineNumber: 381,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -522,7 +523,7 @@ function Stage2({ onNext }) {
                 children: "// apology.txt"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 383,
+                lineNumber: 384,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -540,7 +541,7 @@ function Stage2({ onNext }) {
                 children: "\"I'm really sorry for what I did. I didn't mean to hurt you. You mean everything to me, and I promise I'll do better. I hate seeing you upset — especially because of me.\""
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 386,
+                lineNumber: 387,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -551,18 +552,18 @@ function Stage2({ onNext }) {
                     children: "💾 Apply Patch"
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 398,
+                    lineNumber: 399,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 397,
+                lineNumber: 398,
                 columnNumber: 7
             }, this)
         ]
     }, "stage2", true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 345,
+        lineNumber: 346,
         columnNumber: 5
     }, this);
 }
@@ -589,7 +590,7 @@ function Stage3({ onNext }) {
                 text: "CHAOS TEST SUITE v3.7"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 416,
+                lineNumber: 417,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -597,7 +598,7 @@ function Stage3({ onNext }) {
                 children: "Running Boyfriend Stability Tests 🧪"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 418,
+                lineNumber: 419,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -605,7 +606,7 @@ function Stage3({ onNext }) {
                 children: 'We ran intensive simulations including late replies, mood swings, and "nothing is wrong" scenarios.'
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 422,
+                lineNumber: 423,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -633,7 +634,7 @@ function Stage3({ onNext }) {
                                         children: test.label
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 437,
+                                        lineNumber: 438,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -644,13 +645,13 @@ function Stage3({ onNext }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 438,
+                                        lineNumber: 439,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 436,
+                                lineNumber: 437,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -669,23 +670,23 @@ function Stage3({ onNext }) {
                                     className: "h-full bg-gradient-to-r from-[#58a6ff] via-[#3fb950] to-[#6bffb3]"
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 441,
+                                    lineNumber: 442,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 440,
+                                lineNumber: 441,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, test.label, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 429,
+                        lineNumber: 430,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 427,
+                lineNumber: 428,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -696,18 +697,18 @@ function Stage3({ onNext }) {
                     children: "▶ Run Forgiveness CAPTCHA"
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 453,
+                    lineNumber: 454,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 452,
+                lineNumber: 453,
                 columnNumber: 7
             }, this)
         ]
     }, "stage3", true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 408,
+        lineNumber: 409,
         columnNumber: 5
     }, this);
 }
@@ -745,7 +746,7 @@ function Stage4({ onNext, onRetry }) {
                 text: "HUMILITY CAPTCHA"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 493,
+                lineNumber: 494,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -753,7 +754,7 @@ function Stage4({ onNext, onRetry }) {
                 children: "Verify You Are Not A Silly Goose 🤖"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 495,
+                lineNumber: 496,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -764,7 +765,7 @@ function Stage4({ onNext, onRetry }) {
                         children: "Question: What is the best excuse after messing up?"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 500,
+                        lineNumber: 501,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -775,12 +776,12 @@ function Stage4({ onNext, onRetry }) {
                                 children: item
                             }, item, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 506,
+                                lineNumber: 507,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 504,
+                        lineNumber: 505,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -796,7 +797,7 @@ function Stage4({ onNext, onRetry }) {
                         children: message
                     }, message, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 516,
+                        lineNumber: 517,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -807,13 +808,13 @@ function Stage4({ onNext, onRetry }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 525,
+                        lineNumber: 526,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 499,
+                lineNumber: 500,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AppButton, {
@@ -822,13 +823,13 @@ function Stage4({ onNext, onRetry }) {
                 children: "Abort Mission & Retry"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 530,
+                lineNumber: 531,
                 columnNumber: 7
             }, this)
         ]
     }, "stage4", true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 485,
+        lineNumber: 486,
         columnNumber: 5
     }, this);
 }
@@ -862,7 +863,7 @@ function Stage5({ onNext, onRetry }) {
                 text: "MEMORY GALLERY // RESTORE POINT"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 559,
+                lineNumber: 560,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -870,7 +871,7 @@ function Stage5({ onNext, onRetry }) {
                 children: "Moments I Never Want To Lose 📸"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 561,
+                lineNumber: 562,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -878,7 +879,7 @@ function Stage5({ onNext, onRetry }) {
                 children: "A tiny museum of us, where every photo is proof that we are better together than apart."
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 565,
+                lineNumber: 566,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -922,12 +923,12 @@ function Stage5({ onNext, onRetry }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 586,
+                                        lineNumber: 587,
                                         columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 585,
+                                    lineNumber: 586,
                                     columnNumber: 19
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                     src: memory.src,
@@ -936,12 +937,12 @@ function Stage5({ onNext, onRetry }) {
                                     onError: ()=>markFailed(index)
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 591,
+                                    lineNumber: 592,
                                     columnNumber: 19
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 583,
+                                lineNumber: 584,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -949,7 +950,7 @@ function Stage5({ onNext, onRetry }) {
                                 children: memory.title
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 600,
+                                lineNumber: 601,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -957,19 +958,19 @@ function Stage5({ onNext, onRetry }) {
                                 children: memory.note
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 601,
+                                lineNumber: 602,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, memory.title, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 576,
+                        lineNumber: 577,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 570,
+                lineNumber: 571,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -981,7 +982,7 @@ function Stage5({ onNext, onRetry }) {
                         children: "Restart Story"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 610,
+                        lineNumber: 611,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AppButton, {
@@ -990,19 +991,19 @@ function Stage5({ onNext, onRetry }) {
                         children: "Continue To Final Patch"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 613,
+                        lineNumber: 614,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 609,
+                lineNumber: 610,
                 columnNumber: 7
             }, this)
         ]
     }, "stage5", true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 551,
+        lineNumber: 552,
         columnNumber: 5
     }, this);
 }
@@ -1029,7 +1030,7 @@ function Stage6({ onRetry }) {
                 text: "✔ PATCH APPLIED"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 631,
+                lineNumber: 632,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1037,7 +1038,7 @@ function Stage6({ onRetry }) {
                 children: "Patch Update v2.0 Applied 💙"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 633,
+                lineNumber: 634,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1047,12 +1048,12 @@ function Stage6({ onRetry }) {
                         delay: 0.2 + i * 0.4
                     }, item, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 639,
+                        lineNumber: 640,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 637,
+                lineNumber: 638,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -1070,7 +1071,7 @@ function Stage6({ onRetry }) {
                 children: "System status: Waiting for your forgiveness... 🤍"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 643,
+                lineNumber: 644,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1091,18 +1092,18 @@ function Stage6({ onRetry }) {
                     children: "Still mad? Retry Fix 😭"
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 664,
+                    lineNumber: 665,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 655,
+                lineNumber: 656,
                 columnNumber: 7
             }, this)
         ]
     }, "stage6", true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 623,
+        lineNumber: 624,
         columnNumber: 5
     }, this);
 }
@@ -1113,12 +1114,12 @@ function Home() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FloatingHearts, {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 679,
+                lineNumber: 680,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MuteButton, {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 680,
+                lineNumber: 681,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -1128,21 +1129,21 @@ function Home() {
                         onNext: ()=>setStage(2)
                     }, "1", false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 683,
+                        lineNumber: 684,
                         columnNumber: 25
                     }, this),
                     stage === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Stage2, {
                         onNext: ()=>setStage(3)
                     }, "2", false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 684,
+                        lineNumber: 685,
                         columnNumber: 25
                     }, this),
                     stage === 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Stage3, {
                         onNext: ()=>setStage(4)
                     }, "3", false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 685,
+                        lineNumber: 686,
                         columnNumber: 25
                     }, this),
                     stage === 4 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Stage4, {
@@ -1150,7 +1151,7 @@ function Home() {
                         onRetry: ()=>setStage(1)
                     }, "4", false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 687,
+                        lineNumber: 688,
                         columnNumber: 11
                     }, this),
                     stage === 5 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Stage5, {
@@ -1158,26 +1159,26 @@ function Home() {
                         onRetry: ()=>setStage(1)
                     }, "5", false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 694,
+                        lineNumber: 695,
                         columnNumber: 11
                     }, this),
                     stage === 6 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Stage6, {
                         onRetry: ()=>setStage(1)
                     }, "6", false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 700,
+                        lineNumber: 701,
                         columnNumber: 25
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 682,
+                lineNumber: 683,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 678,
+        lineNumber: 679,
         columnNumber: 5
     }, this);
 }

@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // ── Customization ──────────────────────────────────────────────
 const HER_NAME = "Tania Khan"; // Change this to her name!
-const SONG_PATH = "/Sorry_Sorry.mp3"; // Put your audio file in /public and update this name if needed.
+const BASE_PATH = "/Sorry";
+const SONG_PATH = `${BASE_PATH}/Sorry_Sorry.mp3`; // Put your audio file in /public and update this name if needed.
 // ──────────────────────────────────────────────────────────────
 
 const CONSOLE_LOGS = [
@@ -43,32 +44,32 @@ const EXCUSES = [
 
 const MEMORIES = [
   {
-    src: "/memories/memory-1.jpg",
+    src: `${BASE_PATH}/memories/memory-1.jpg`,
     title: "The Day We Laughed Too Much",
     note: "Bug count: 0 | Smile count: infinite",
   },
   {
-    src: "/memories/memory-2.jpg",
+    src: `${BASE_PATH}/memories/memory-2.jpg`,
     title: "Our Favorite Food Mission",
     note: "Calories high, drama low, vibes perfect",
   },
   {
-    src: "/memories/memory-3.jpg",
+    src: `${BASE_PATH}/memories/memory-3.jpg`,
     title: "That Random Cute Selfie",
     note: "Taken in 0.5x chaos mode",
   },
   {
-    src: "/memories/memory-4.jpg",
+    src: `${BASE_PATH}/memories/memory-4.jpg`,
     title: "Sunrise + Us + Peace",
     note: "Best deployed update so far",
   },
   {
-    src: "/memories/memory-5.jpg",
+    src: `${BASE_PATH}/memories/memory-5.jpg`,
     title: "Walk, Talk, Repeat",
     note: "Daily standup with extra romance",
   },
   {
-    src: "/memories/memory-6.jpg",
+    src: `${BASE_PATH}/memories/memory-6.jpg`,
     title: "Tiny Moment, Big Memory",
     note: "Saved in heart cache forever",
   },
