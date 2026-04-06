@@ -12,21 +12,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 const metadata = {
-    title: "Error 404: Her Smile Not Found | Developer Apology",
-    description: "A creative, interactive developer-themed apology app with music, memories, and heartfelt confession. Built with love and code.",
-    keywords: "apology, interactive, romance, developer, funny, creative, confession, sorry",
+    title: "I'm Really Sorry... Let Me Fix This 💔",
+    description: "I messed up. I know I hurt you and I hate that. This is my way of saying sorry—with our memories, music, and everything I should've said better the first time.",
+    keywords: "apology, I'm sorry, love, sorry, heartfelt, fix things, memories together",
     authors: [
         {
-            name: "Apology App"
+            name: "Someone Who Really Cares"
         }
     ],
-    creator: "Apology App",
-    publisher: "Apology App",
+    creator: "Made with regret and love",
+    publisher: "From my heart to yours",
     robots: "index, follow",
     viewport: "width=device-width, initial-scale=1, maximum-scale=5",
     themeColor: "#0a0a0f",
     alternates: {
-        canonical: "https://yourdomain.com"
+        canonical: "https://ashikulislamm.github.io/Sorry/"
     },
     icons: {
         icon: "/sorry.png",
@@ -36,25 +36,25 @@ const metadata = {
     openGraph: {
         type: "website",
         locale: "en_US",
-        url: "https://yourdomain.com",
-        siteName: "Error 404: Her Smile Not Found",
-        title: "Error 404: Her Smile Not Found | An Interactive Apology",
-        description: "A heartfelt, creative developer-themed apology with animations, music, memories, and proof that some bugs only need love to fix.",
+        url: "https://ashikulislamm.github.io/Sorry/",
+        siteName: "I'm Really Sorry 💔",
+        title: "I'm Really Sorry... Let Me Fix This",
+        description: "I know what I did was wrong. I'm sorry for hurting you. You mean everything to me, and I want to make this right. Please read this.",
         images: [
             {
                 url: "/sorry.png",
                 width: 1200,
                 height: 1200,
-                alt: "Error 404 Apology App Cover",
+                alt: "A real apology from someone who cares",
                 type: "image/png"
             }
         ]
     },
     twitter: {
         card: "summary_large_image",
-        title: "Error 404: Her Smile Not Found",
-        description: "A developer-themed interactive apology app with animations and heartfelt moments.",
-        creator: "@ApologyApp",
+        title: "I'm Really Sorry 💔",
+        description: "I made a big mistake and I'm truly sorry. You matter so much to me. Will you forgive me?",
+        creator: "@ReallyRegretful",
         images: [
             "/sorry.png"
         ]
