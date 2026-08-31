@@ -13,25 +13,60 @@ body {
   color: #e0e0ff;
 }
 
+/* CRT Scanline overlay effect */
+.scanline-overlay::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+              linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 30;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Subtle Retro Grid Background */
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
 .glitch-text {
-  animation: glitch 3s infinite;
+  animation: glitch 2.5s infinite;
+  position: relative;
+  display: inline-block;
 }
 
 @keyframes glitch {
-  0%, 92%, 100% {
-    text-shadow: 2px 0 #f0f, -2px 0 #0ff;
+  0%, 88%, 100% {
+    text-shadow: 3px 0 #ff0055, -3px 0 #00ffff;
+    transform: translate(0, 0) skewX(0deg);
+  }
+  89% {
+    text-shadow: -5px 0 #ff0055, 5px 0 #00ffff;
+    transform: translate(-3px, 1px) skewX(-4deg);
+  }
+  91% {
+    text-shadow: 5px 0 #ff0055, -5px 0 #00ffff;
+    transform: translate(3px, -1px) skewX(4deg);
   }
   93% {
-    text-shadow: -4px 0 #f0f, 4px 0 #0ff;
-    transform: skewX(-2deg);
+    text-shadow: -3px 2px #ff0055, 3px -2px #00ffff;
+    transform: translate(-2px, 0) skewX(-2deg);
   }
   95% {
-    text-shadow: 4px 0 #f0f, -2px 0 #0ff;
-    transform: skewX(2deg);
+    text-shadow: 4px -2px #ff0055, -4px 2px #00ffff;
+    transform: translate(2px, -1px) skewX(1deg);
   }
   97% {
-    text-shadow: -2px 2px #f0f, 2px -2px #0ff;
-    transform: skewX(0);
+    text-shadow: -1px 0 #ff0055, 1px 0 #00ffff;
+    transform: translate(0, 0) skewX(0deg);
   }
 }
 
@@ -79,6 +114,55 @@ body {
   animation: blink 1.5s infinite;
 }
 
+/* Shake keyframes for wrong CAPTCHA answer */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+.captcha-shake {
+  animation: shake 0.4s ease-in-out;
+  border-color: #f85149 !important;
+  background-color: rgba(248, 81, 73, 0.15) !important;
+}
+
+.captcha-success {
+  border-color: #3fb950 !important;
+  background-color: rgba(63, 185, 80, 0.18) !important;
+  box-shadow: 0 0 15px rgba(63, 185, 80, 0.4) !important;
+}
+
+/* Subtle green pulse-glow for filled progress bars */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 6px rgba(107, 255, 179, 0.4), 0 0 12px rgba(107, 255, 179, 0.2); }
+  50% { box-shadow: 0 0 16px rgba(107, 255, 179, 0.8), 0 0 24px rgba(107, 255, 179, 0.5); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+/* Equalizer bar keyframes */
+@keyframes eqBar1 {
+  0%, 100% { height: 4px; }
+  50% { height: 12px; }
+}
+
+@keyframes eqBar2 {
+  0%, 100% { height: 14px; }
+  50% { height: 6px; }
+}
+
+@keyframes eqBar3 {
+  0%, 100% { height: 8px; }
+  50% { height: 15px; }
+}
+
+.eq-bar-1 { animation: eqBar1 0.6s ease-in-out infinite; }
+.eq-bar-2 { animation: eqBar2 0.8s ease-in-out infinite; }
+.eq-bar-3 { animation: eqBar3 0.5s ease-in-out infinite; }
+
 .heart-particle {
   position: fixed;
   pointer-events: none;
@@ -113,3 +197,37 @@ body {
 
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Custom Glow Cursor Follower */
+.glow-cursor {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(107, 179, 255, 0.4) 0%, rgba(255, 107, 157, 0.2) 60%, transparent 100%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.05s ease-out;
+  box-shadow: 0 0 15px rgba(107, 179, 255, 0.5);
+}
+
+/* Card Heart Particle Burst */
+@keyframes cardHeartBurst {
+  0% { opacity: 1; transform: translate(-50%, 0) scale(0.6) rotate(0deg); }
+  50% { opacity: 0.8; transform: translate(-50%, -40px) scale(1.2) rotate(-15deg); }
+  100% { opacity: 0; transform: translate(-50%, -80px) scale(0.8) rotate(15deg); }
+}
+
+.card-heart-particle {
+  position: absolute;
+  pointer-events: none;
+  animation: cardHeartBurst 1s ease-out forwards;
+  z-index: 20;
+}
+
+/* Certificate Glow Border */
+.certificate-glow {
+  box-shadow: 0 0 30px rgba(107, 255, 179, 0.3), 0 0 60px rgba(107, 179, 255, 0.15);
+  border: 1px solid rgba(107, 255, 179, 0.5);
+}

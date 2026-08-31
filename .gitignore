@@ -52,11 +52,11 @@ logs/
 # Misc
 .cache/
 .next/
-!.next/
 out/
 .turbo
 .vercel
 dist
+
 
 # Local Netlify folder
 .netlify

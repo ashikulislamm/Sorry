@@ -1,7 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#0a0a0f",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ashikulislamm.github.io/Sorry/"),
   title: "I'm Really Sorry... Let Me Fix This 💔",
   description:
     "I messed up. I know I hurt you and I hate that. This is my way of saying sorry—with our memories, music, and everything I should've said better the first time.",
@@ -11,10 +19,8 @@ export const metadata: Metadata = {
   creator: "Made with regret and love",
   publisher: "From my heart to yours",
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  themeColor: "#0a0a0f",
   alternates: {
-    canonical: "https://ashikulislamm.github.io/Sorry/", // Update with your actual domain
+    canonical: "https://ashikulislamm.github.io/Sorry/",
   },
   icons: {
     icon: "/Sorry/sorry.png",
@@ -24,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ashikulislamm.github.io/Sorry/", // Update with your actual domain
+    url: "https://ashikulislamm.github.io/Sorry/",
     siteName: "I'm Really Sorry 💔",
     title: "I'm Really Sorry... Let Me Fix This",
     description:
@@ -60,3 +66,4 @@ export default function RootLayout({
     </html>
   );
 }
+
